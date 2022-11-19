@@ -1,0 +1,11 @@
+version: "3"
+services:
+  prismicc_db:
+    container_name: prismicc_db
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: db
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: prismicc_db
